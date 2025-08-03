@@ -26,7 +26,7 @@ This website highlights my skills, projects, and professional experience as a de
 ## 📦 Installation & Setup
 ```bash
 # Clone this repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Ayush4569/Portfolio.git
 
 # Navigate to the folder
 cd your-repo-name
