@@ -41,16 +41,12 @@ export default function Page() {
       <section id="resume">
         <BlurFade inView={true}>
           <div className="flex items-center gap-4 mb-4">
-            <div className="inline-flex items-center rounded-md border px-3 py-1 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80">
-              Resume
-            </div>
             <Link
               href="/resume.pdf"
               target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-8 px-3"
+              className="inline-flex items-center rounded-md border px-3 py-1 text-sm font-semibold transition-colors focus:outline-none  focus:ring-ring border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80"
             >
-              View PDF
+              View Resume
             </Link>
           </div>
         </BlurFade>
@@ -109,9 +105,9 @@ export default function Page() {
             {DATA.work.map(({ company, position, responsibilty }, index) => (
               <div
                 key={index}
-                className="w-full border rounded-lg p-6 bg-gray-800 text-gray-100 outline-orange-400 outline-dotted shadow-md hover:shadow-lg transition-shadow"
+                className="w-full border rounded-lg p-6 bg-gray-800 text-gray-100 outline-dotted shadow-md hover:shadow-lg transition-shadow"
               >
-                <h3 className="text-xl font-bold">{company} - June 2025 to present</h3>
+                <h3 className="text-xl font-bold">{company} - June'25 to Aug'25</h3>
                 <Badge className="mt-1">Remote</Badge>
                <div className="mt-2">
                <Badge > {position}</Badge>
