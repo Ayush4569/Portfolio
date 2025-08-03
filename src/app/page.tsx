@@ -107,7 +107,7 @@ export default function Page() {
                 key={index}
                 className="w-full border rounded-lg p-6 bg-gray-800 text-gray-100 outline-dotted shadow-md hover:shadow-lg transition-shadow"
               >
-                <h3 className="text-xl font-bold">{company} - June'25 to Aug'25</h3>
+                <h3 className="text-xl font-bold">{company} - June&apos;25 to Aug&apos;25</h3>
                 <Badge className="mt-1">Remote</Badge>
                <div className="mt-2">
                <Badge > {position}</Badge>
