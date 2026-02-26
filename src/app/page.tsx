@@ -5,9 +5,11 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
+export const dynamic = "force-static";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -31,7 +33,14 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage className="object-cover " alt={DATA.name} src={DATA.avatarUrl} />
+                <Image
+                  src={DATA.avatarUrl}
+                  alt={DATA.name}
+                  width={112}
+                  height={112}
+                  priority
+                  className="object-cover rounded-full border"
+                />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -107,11 +116,11 @@ export default function Page() {
                 key={index}
                 className="w-full border rounded-lg p-6 bg-gray-800 text-gray-100 outline-dotted shadow-md hover:shadow-lg transition-shadow"
               >
-                <h3 className="text-xl font-bold">{company} - June&apos;25 to Aug&apos;25</h3>
+                <h3 className="text-xl font-bold">{company} - June&apos;25 to Dec&apos;25</h3>
                 <Badge className="mt-1">Remote</Badge>
-               <div className="mt-2">
-               <Badge > {position}</Badge>
-               </div>
+                <div className="mt-2">
+                  <Badge > {position}</Badge>
+                </div>
                 <p className="mt-1">
                   {responsibilty}
                 </p>
