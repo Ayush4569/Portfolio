@@ -59,11 +59,11 @@ export const DATA = {
   },
 
   work: [
-   {
-     company :"Urban sabzi",
-     position :"Full-stack developer",
-     responsibilty:"As a Full-Stack Developer, I’ve been responsible for delivering end-to-end features crafting clean, intuitive, and responsive user interfaces while building secure, scalable, and maintainable backend systems. I work closely with designers and product teams to turn ideas into seamless digital experiences, implementing RESTful APIs, authentication systems, and efficient database structures for both website and mobile application. "
-   }
+    {
+      company: "Urban sabzi",
+      position: "Full-stack developer",
+      responsibilty: "As a Full-Stack Developer, I’ve been responsible for delivering end-to-end features crafting clean, intuitive, and responsive user interfaces while building secure, scalable, and maintainable backend systems. I work closely with designers and product teams to turn ideas into seamless digital experiences, implementing RESTful APIs, authentication systems, and efficient database structures for both website and mobile application. "
+    }
   ],
   education: [
     {
@@ -92,6 +92,29 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "Snipnote",
+      href: "https://snipnote-v1.vercel.app",
+      dates: "Nov 2025 - Jan 2025",
+      active: true,
+      description:
+        "A full-stack AI-powered PDF summarization platform that enables users to upload PDF'S and instantly receive structured, easy-to-digest summaries generated using LLM-driven prompts, significantly improving document comprehension speed. The platform features secure, scalable authentication with cookie-based JWT (access and refresh tokens), backend-managed session persistence, and cross-domain deployment. Performance and user experience were optimized using React Query to reduce redundant network calls, and Razorpay Subscriptions was integrated for payments, delivering a production-ready stack",
+      technologies: ["Next.js", "React.js", "Tailwind CSS", "Redux", "Node.js", "Express.js", "Prisma", "Tanstack query", "Docker", "Typescript", "Zod", "Gemini AI SDK", "Shadcn UI"],
+      links: [
+        {
+          type: "Website",
+          href: "https://snipnote-v1.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Ayush4569/SnipNote",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
     {
       title: "Notecraft",
       href: "https://app.notecraft.tech",
